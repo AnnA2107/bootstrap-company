@@ -18,3 +18,11 @@
 		margin: 25px 0;
 	}
 }
+.logo{
+	color: blue;
+	font-size 200px;
+}
+.logo-small{
+	color: lightblue;
+	font-size: 50px;
+}
