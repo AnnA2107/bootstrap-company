@@ -1,7 +1,11 @@
 .jumbotron{
 	background-image: url("vacation.jpg");
 	color: white;
+	padding: 100px 25px;
 }
 .bg-grey{
 	background-color: grey;
+}
+.container-fluid{
+	padding: 60px 50px;
 }
