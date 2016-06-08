@@ -297,5 +297,22 @@ google.maps.event.addDomListener(window, "load", initialize);
 	</a>
 	<p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
+
+<!--Add smooth scrolling to all links in navbar + footer link-->
+<script>
+	$(document).ready(function(){
+		$(".navbar a, footer a[href='#myPage']").on('click', function(event){
+			if (this.hash !== ""){
+				event.preventDefault();
+				var hash = this.hash;
+				$('html, body').animate({
+					scrollTop: $(hash).offset().top
+				}, 900, funtcion(){
+					window.location.hash = hash;
+				});
+			}
+		});
+	})
+</script>
 </body>
 </html>
