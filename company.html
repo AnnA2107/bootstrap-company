@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="company_style.css">
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
 <!--header-->
@@ -234,11 +235,11 @@
 </div>
 </div>
 <!--add google maps-->
-<div id="googleMap"style="height:400px; width:100%;"></div>
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+<div id="googleMap" style="width:100%;height:400px"></div>
+
 <script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-functioninitialize(){
+var myCenter = new google.maps.LatLng(50.43826537, 30.54336548);
+function initialize(){
 	var mapProp = {
 		center: myCenter,
 		zoom: 12,
@@ -258,5 +259,16 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, "load", initialize);
 </script>
+
+<!--alternative 
+<script>
+	var mapCanvas = document.getElementById('googleMap');
+	var mapOptions = {
+		center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+	}
+	var map = new google.maps.Map(mapCanvas, mapOptions);
+</script>-->
+
+
 </body>
 </html>
