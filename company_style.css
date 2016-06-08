@@ -3,12 +3,20 @@
 	color: white;
 	padding: 100px 25px;
 }
+.jumbotron .btn:hover{
+	color: #00349c;
+}
 .bg-grey{
 	background-color: lightgrey;
+	color: white;
+}
+.bg-grey:hover{
+	color: #00349c;
 }
 .container-fluid{
 	padding: 60px 50px;
 }
+
 .logo{
 	font-size: 200px;
 }
@@ -33,18 +41,18 @@
 }
 .thumbnail img{
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	margin-bottom: 10px;
 }
 .carousel-control.right, .carousel-control.left{
 	background-image: none;
-	color: #f4511e;
+	color: #00349c;
 }
 .carousel-indicators li{
-	border-color: #f4511e;
+	border-color: lightblue;
 }
 .carousel-indicators li.active{
-	background-color: #f4511e;
+	background-color: #3b69b8;
 }
 .item h4{
 	font-size: 19px;
@@ -61,7 +69,7 @@ h2{
 }
 
 .panel {
-    border: 1px solid #f4511e; 
+    border: 1px solid lightblue; 
     border-radius:0;
     transition: box-shadow 0.5s;
 }
@@ -71,14 +79,15 @@ h2{
 }
 
 .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
+    border: 1px solid #00349c;
     background-color: #fff !important;
-    color: #f4511e;
+    color: blue;
 }
 
 .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
+    height: 250px;
+    background-color: lightblue !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -86,7 +95,10 @@ h2{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-
+.panel-heading img{
+	width: 100%;
+	height: 100%;
+}
 .panel-footer {
     background-color: #fff !important;
 }
@@ -96,16 +108,26 @@ h2{
 }
 
 .panel-footer h4 {
-    color: #aaa;
+    color: yellow;
     font-size: 14px;
 }
 
 .panel-footer .btn {
     margin: 15px 0;
-    background-color: #f4511e;
+    background-color: lightblue;
     color: #fff;
 }
-
+#contact{
+	background-color: lightblue;
+	color: white;
+}
+#contact .btn{
+	background-color: white;
+	color: lightblue;
+}
+#contact .btn:hover{
+	color: #00349c;
+}
 .navbar {
       margin-bottom: 0;
       background-color: lightblue;
@@ -120,7 +142,7 @@ h2{
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
+      color: #00349c !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
@@ -132,8 +154,9 @@ h2{
   	margin-bottom: 20px;
   	color: lightblue;
   }
+
   /*slide in elements*/
-  .slideanim{visibility: hiden;}
+  .slideanim {visibility: hiden;}
   .slide{
   	animation-name: slide;
   	-webkit-animation-name: slide;
