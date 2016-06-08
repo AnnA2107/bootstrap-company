@@ -132,3 +132,28 @@ h2{
   	margin-bottom: 20px;
   	color: lightblue;
   }
+  /*slide in elements*/
+  .slideanim{visibility: hiden;}
+  .slide{
+  	animation-name: slide;
+  	-webkit-animation-name: slide;
+  	animation-duration: 1s;
+  	-webkit-animation-duration: 1s;
+  	visibility: visible;
+  }
+  @keyframes slide{
+  	0%{
+  		opacity: 0;
+  		-webkit-transform: translateY(0%);
+  	}
+  }
+  @-webkit-keyframes slide{
+  	0%{
+  		opacity: 0;
+  		-webkit-transform: translateY(70%);
+  	}
+  	100%{
+  		opacity: 1;
+  		-webkit-transform: translateY(0%);
+  	}
+  }
